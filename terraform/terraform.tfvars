@@ -1,6 +1,0 @@
-cloud_id                 = "b1gk75e62lh0pp4o3qt1"        
-folder_id                = "b1gllhefs26cuqhdf6bd"        
-service_account_key_file = "E:/authorized_key.json"                 
-ssh_public_key           = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFGneU1LeyCrSMJY/86mZP0YzMfraxBTWajNEkGjhLzR rusfar781@gmail.com"  
-docker_image_name        = "seelebz/vandyshev-fastapi-app:latest"
-zone                     = "ru-central1-a"
