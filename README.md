@@ -154,7 +154,7 @@ curl http://localhost:8888
 Ниже приведены все скриншоты, сделанные в ходе выполнения проекта. Кликните по любому изображению, чтобы открыть его в полном размере.
 
 Сборка Docker-образа
-https://screenshots/docker-build.png
+[https://screenshots/docker-build.png](https://github.com/Sh1rok/Vandyshev-21-K-AS1/blob/main/screenshots/docker-build.png)
 
 Запущенные контейнеры (docker ps)
 https://screenshots/04-docker-ps.png
