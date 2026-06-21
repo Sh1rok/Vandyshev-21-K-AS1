@@ -1,3 +1,4 @@
+markdown
 # Проект по дисциплине «Технология проектирования автоматизированных систем в защищённом исполнении»
 
 **Тема:** Контейнеризация и оркестрация микросервиса с развёртыванием в облаке Yandex Cloud и Minikube
@@ -7,13 +8,13 @@
 
 ---
 
-##  Цель работы
+## 🎯 Цель работы
 
 Разработать веб-сервис на **FastAPI**, упаковать его в **Docker**, загрузить образ в **Docker Hub**, развернуть инфраструктуру как код (**Terraform**) в **Yandex Cloud** на виртуальной машине, а также запустить сервис в локальном **Kubernetes (Minikube)** с использованием манифестов.
 
 ---
 
-##  Используемые технологии
+## 🧰 Используемые технологии
 
 | Технология | Назначение |
 |------------|------------|
@@ -25,19 +26,19 @@
 
 ---
 
-##  Структура репозитория
-<img width="452" height="537" alt="image" src="https://github.com/user-attachments/assets/37acbd1b-b6de-4d11-9ca0-97ef0d33ce21" />
+## 📁 Структура репозитория
 
+<img width="452" height="537" alt="image" src="https://github.com/user-attachments/assets/37acbd1b-b6de-4d11-9ca0-97ef0d33ce21" />
 
 > **Важно:** файл `terraform.tfvars` содержит реальные ключи доступа и **не выложен** в публичный репозиторий (добавлен в `.gitignore`).
 
 ---
 
-##  Инструкция по развёртыванию и проверке
+## 🚀 Инструкция по развёртыванию и проверке
 
 ### 1. Локальный запуск без Docker (для разработки)
 
-
+```bash
 pip install -r requirements.txt
 uvicorn app:app --reload
 Сервис будет доступен по адресу: http://localhost:8000
@@ -50,7 +51,7 @@ docker run -d -p 8000:8000 --name fastapi-test seelebz/vandyshev-fastapi-app:lat
 
 bash
 curl http://localhost:8000
-Скриншоты:
+Скриншоты (см. также общий список в конце):
 
 Сборка образа: screenshots/docker-build.png
 
@@ -123,7 +124,7 @@ kubectl port-forward -n vandyshev-space service/fastapi-service 8888:80
 
 bash
 curl http://localhost:8888
-Скриншоты:
+Скриншоты (см. также общий список в конце):
 
 Поды: screenshots/kubectl-pods.png
 
@@ -148,6 +149,30 @@ curl http://localhost:8888
 Сервис развёрнут в локальном Kubernetes (Minikube) с использованием манифестов (namespace, deployment, service).
 
 Все этапы автоматизированы, код и отчёт находятся в GitHub.
+
+📸 Список скриншотов
+Ниже приведены все скриншоты, сделанные в ходе выполнения проекта. Кликните по любому изображению, чтобы открыть его в полном размере.
+
+Сборка Docker-образа
+https://screenshots/docker-build.png
+
+Запущенные контейнеры (docker ps)
+https://screenshots/04-docker-ps.png
+
+Проверка через curl localhost
+https://screenshots/05-curl-localhost.png
+
+Репозиторий на Docker Hub
+https://screenshots/docker-hub-repo.png
+
+Планирование Terraform (terraform plan)
+https://screenshots/terraform-plan.png
+
+Поды Kubernetes в Minikube
+https://screenshots/kubectl-pods.png
+
+Доступ к сервису через port-forward (ответ curl)
+https://screenshots/minikube-curl.png
 
 🔗 Ссылки
 GitHub репозиторий: Vandyshev-21-K-AS1
