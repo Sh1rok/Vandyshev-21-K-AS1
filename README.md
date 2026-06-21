@@ -38,7 +38,7 @@ markdown
 
 ### 1. Локальный запуск без Docker (для разработки)
 
-```bash
+``bash
 pip install -r requirements.txt
 uvicorn app:app --reload
 Сервис будет доступен по адресу: http://localhost:8000
