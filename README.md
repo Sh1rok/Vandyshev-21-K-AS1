@@ -34,7 +34,6 @@ Vandyshev-21-K-AS1/
 > *Примечание:* файл `terraform.tfvars` содержит реальные ключи доступа и не был выложен в публичный репозиторий.
 Инструкция по развёртыванию и проверке
 1.  Локальный запуск без Docker (для разработки)
-```bash
 pip install -r requirements.txt
 uvicorn app:app –reload
 Сервис будет доступен по адресу: http://localhost:8000
@@ -111,4 +110,3 @@ curl http://localhost:8888
 Ссылки:
 GitHub репозиторий: Vandyshev-21-K-AS1
 Docker Hub образ: seelebz/vandyshev-fastapi-app
-
